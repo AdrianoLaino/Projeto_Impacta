@@ -1,0 +1,80 @@
+*{box-sizing: border-box;}
+body {
+    background-color:#393E46;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: white;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding-left: 15px;
+}
+
+h2 {
+    color: #D6D5A8;
+}
+#imagem-decorativa {
+    height: 450px;
+    background-image: url(../imagens/teclado.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+main {
+    margin: auto;
+    width: 85%;
+}
+
+footer {
+    
+    height: 50px;
+    background-color: rgba(0,0,0,.5) ;
+    color: white;
+    /* Centralização total (Vertical e horizontal) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Estilo para produtos */
+.treinamentos section {
+    background-color: #D6D5A8;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: black 0 0 15px;
+    width: 32%
+}
+
+.treinamentos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flutuar-imagem {
+    float: left;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 600px){
+    .treinamentos { flex-direction: column;}
+    /* Fazendo com que a largura das seções voltem ao normal (largura automatica)*/
+    .treinamentos section {
+        width: auto;
+        margin-bottom: 10px;
+    }
+}
+
+.pro {
+    color: white;
+
+}
+.pro:hover {
+    color: blue;
+}
+.center {
+    text-align: center;
+}

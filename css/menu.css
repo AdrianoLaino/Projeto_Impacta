@@ -1,0 +1,45 @@
+.menu {
+    list-style: none; /* remover os marcadores (Bolinhas)*/
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, .7);
+    
+    /* Resolvendo o efeito colateral do float*/
+    overflow: hidden;
+    
+}
+/*deixando os itens da lista flutuados, à esquerda (na pratica ficam lado a lado)*/
+.menu li {float: left;}
+
+.menu a {
+    color: white;
+    text-decoration: none; /* remoção do anderlaine*/
+    padding: 14px 16px;
+    display: block;
+}
+.menu a:hover {
+    background-color: white;
+    color: black;
+}
+
+.menu li.icone {display: none;} /* esconder o item que tem o icone*/
+
+@media screen and (max-width: 760px){
+    .menu li {display: none;} /**/
+    .menu li.icone{
+        display: block;
+        float: right;  
+    }
+    .menu.aberto li { /* regra fechada*/
+        float: none;
+        display: inline;
+    }
+    .menu.aberto {position: relative;} /* quando o meu estiver aberto, ele passará a ser a referencia de posicionamento do botão (Menu---)*/
+
+    .menu.aberto li.icone { /* posicionando o botão do meu à direita [right 0] e acima [top 0], em relação ao menu aberto.*/
+        position: absolute;
+        right: 0; top: 0;
+    }
+    /* .menu li {float: none;}
+    .menu a {text-align: center;}*/
+}

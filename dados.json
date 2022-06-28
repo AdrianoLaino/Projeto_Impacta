@@ -1,0 +1,38 @@
+{
+  "vagas": [
+    {
+      "id": 1,
+      "titulo": "Programador Java"
+    },
+    {
+      "id": 2,
+      "titulo": "Analista de dados"
+    },
+    {
+      "id": 3,
+      "titulo": "Professor Excel"
+    },
+    {
+      "id": 4,
+      "titulo": "Dev. Fron-End"
+    }
+  ],
+  "candidatos": [
+    {
+      "nome": "ADRIANO LAINO SIMOES",
+      "data": "1994-12-03",
+      "telefone": "11987609554",
+      "email": "adriano.laino@gmail.com",
+      "vaga": "Professor Excel",
+      "id": 1
+    },
+    {
+      "nome": "ADRIANO LAINO SIMOES",
+      "data": "1998-02-05",
+      "telefone": "11987609554",
+      "email": "adriano.laino@gmail.com",
+      "vaga": "Dev. Fron-End",
+      "id": 2
+    }
+  ]
+}
